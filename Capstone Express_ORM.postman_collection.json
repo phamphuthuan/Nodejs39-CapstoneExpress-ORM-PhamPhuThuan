@@ -1,0 +1,491 @@
+{
+	"info": {
+		"_postman_id": "172139b0-ef3b-4985-827d-295a20f98ff7",
+		"name": "Capstone Express_ORM",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "30882756"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8081/register/signUp",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"full_name\": \"Hoang Nam\",\r\n    \"email\": \"hoangnam@gmail.com\",\r\n    \"password\": \"HoangNam\",\r\n    \"age\": 21,\r\n    \"avatar\": \"hoangnam.img\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/access/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"access",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8081/user/login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"hoangnam@gmail.com\",\r\n    \"password\": \"HoangNam\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/access/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"access",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8081/image/get-image/1/4?ImageName=4",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImhvYW5nbmFtQGdtYWlsLmNvbSIsInBhc3N3b3JkIjoiSG9hbmdOYW0iLCJuZ3VvaV9kdW5nX2lkIjo2LCJpYXQiOjE3MDY4NjI1NDUsImV4cCI6MTg2NDY1MDU0NX0.xsGNaJY7MMIPVIvSG9kKtZGeyzflZlGELzs8vDRzMNU",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "http://localhost:8081/image/get-image/1/20",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"image",
+						"get-image",
+						"1",
+						"20"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8081/info/getInfoImage/4",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImhvYW5nbmFtQGdtYWlsLmNvbSIsInBhc3N3b3JkIjoiSG9hbmdOYW0iLCJuZ3VvaV9kdW5nX2lkIjo2LCJpYXQiOjE3MDY4NjI1NDUsImV4cCI6MTg2NDY1MDU0NX0.xsGNaJY7MMIPVIvSG9kKtZGeyzflZlGELzs8vDRzMNU",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8081/info/getInfoImage/17",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"info",
+						"getInfoImage",
+						"17"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8081/info/getInfoComment/1",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImhvYW5nbmFtQGdtYWlsLmNvbSIsInBhc3N3b3JkIjoiSG9hbmdOYW0iLCJuZ3VvaV9kdW5nX2lkIjo2LCJpYXQiOjE3MDY4NjI1NDUsImV4cCI6MTg2NDY1MDU0NX0.xsGNaJY7MMIPVIvSG9kKtZGeyzflZlGELzs8vDRzMNU",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8081/info/getInfoComment/21",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"info",
+						"getInfoComment",
+						"21"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8081/info/getInfoSaveImg/3",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImhvYW5nbmFtQGdtYWlsLmNvbSIsInBhc3N3b3JkIjoiSG9hbmdOYW0iLCJuZ3VvaV9kdW5nX2lkIjo2LCJpYXQiOjE3MDY4NjI1NDUsImV4cCI6MTg2NDY1MDU0NX0.xsGNaJY7MMIPVIvSG9kKtZGeyzflZlGELzs8vDRzMNU",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8081/info/getInfoSaveImg/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"info",
+						"getInfoSaveImg",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8081/user/getInfoUser",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImhvYW5nbmFtQGdtYWlsLmNvbSIsInBhc3N3b3JkIjoiSG9hbmdOYW0iLCJuZ3VvaV9kdW5nX2lkIjo2LCJpYXQiOjE3MDY4NjI1NDUsImV4cCI6MTg2NDY1MDU0NX0.xsGNaJY7MMIPVIvSG9kKtZGeyzflZlGELzs8vDRzMNU",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8081/user/getInfoUser",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"user",
+						"getInfoUser"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8081/user/getImgSavedByUserID/2",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImhvYW5nbmFtQGdtYWlsLmNvbSIsInBhc3N3b3JkIjoiSG9hbmdOYW0iLCJuZ3VvaV9kdW5nX2lkIjo2LCJpYXQiOjE3MDY4NjI1NDUsImV4cCI6MTg2NDY1MDU0NX0.xsGNaJY7MMIPVIvSG9kKtZGeyzflZlGELzs8vDRzMNU",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8081/user/getImgSavedByUserID/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"user",
+						"getImgSavedByUserID",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8081/user/getImgCreatedByUserID/3",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImhvYW5nbmFtQGdtYWlsLmNvbSIsInBhc3N3b3JkIjoiSG9hbmdOYW0iLCJuZ3VvaV9kdW5nX2lkIjo2LCJpYXQiOjE3MDY4NjI1NDUsImV4cCI6MTg2NDY1MDU0NX0.xsGNaJY7MMIPVIvSG9kKtZGeyzflZlGELzs8vDRzMNU",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8081/user/getImgCreatedByUserID/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"user",
+						"getImgCreatedByUserID",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8081/user/deleteImageByID/4",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImhvYW5nbmFtQGdtYWlsLmNvbSIsInBhc3N3b3JkIjoiSG9hbmdOYW0iLCJuZ3VvaV9kdW5nX2lkIjo2LCJpYXQiOjE3MDY4NjI1NDUsImV4cCI6MTg2NDY1MDU0NX0.xsGNaJY7MMIPVIvSG9kKtZGeyzflZlGELzs8vDRzMNU",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8081/user/deleteImageByID/5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"user",
+						"deleteImageByID",
+						"5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8081/image/post-img",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InZpZXRkdWN0bkBnbWFpbC5jb20iLCJwYXNzd29yZCI6IlZpZXREdWMiLCJuZ3VvaV9kdW5nX2lkIjoyLCJpYXQiOjE3MDY2OTIxMzgsImV4cCI6MTg2NDQ4MDEzOH0.cguvUUJ7fRXkqTSsPAxzCnBoJ4xnRXuPkg1FReswjcM",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "postman-cloud:///1eeba96d-2b5e-41e0-b0f6-52e47074acd9"
+						},
+						{
+							"key": "mo_ta",
+							"value": "Avatar",
+							"type": "text"
+						},
+						{
+							"key": "nguoi_dung_id",
+							"value": "5",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8081/image/post-img",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"image",
+						"post-img"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8081/image/post-multiple-img",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImhvYW5nbmFtQGdtYWlsLmNvbSIsInBhc3N3b3JkIjoiSG9hbmdOYW0iLCJuZ3VvaV9kdW5nX2lkIjo2LCJpYXQiOjE3MDY4NjI1NDUsImV4cCI6MTg2NDY1MDU0NX0.xsGNaJY7MMIPVIvSG9kKtZGeyzflZlGELzs8vDRzMNU",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "files",
+							"type": "file",
+							"src": [
+								"/E:/Screenshot/Backgrounds/PixelArt.jpg",
+								"/E:/Screenshot/Backgrounds/Trees.jpg"
+							]
+						},
+						{
+							"key": "mo_ta",
+							"value": "thik",
+							"type": "text"
+						},
+						{
+							"key": "nguoi_dung_id",
+							"value": "6",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8081/image/post-multiple-img",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"image",
+						"post-multiple-img"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8081/user/update-user/3",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InZpZXRkdWN0bkBnbWFpbC5jb20iLCJwYXNzd29yZCI6IlZpZXREdWMiLCJuZ3VvaV9kdW5nX2lkIjoyLCJpYXQiOjE3MDY2OTY1NDgsImV4cCI6MTg2NDQ4NDU0OH0.9POSSk4Lmae-DkX9x7koDYn7ToXA9Z8FjvEi0XOaEt0",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"lekhanh@gmail.com\",\r\n    \"password\": \"KhanhLe\",\r\n    \"ho_ten\": \"Le Khanh\",\r\n    \"tuoi\": \"20\",\r\n    \"anh_dai_dien\": \"xyz\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/user/update-user/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"user",
+						"update-user",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8081/info/postCommentAndImage",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRyYW5kdXloYWlAZ21haWwuY29tIiwicGFzc3dvcmQiOiJEdXlIYWkiLCJuZ3VvaV9kdW5nX2lkIjoxLCJpYXQiOjE3MDY2OTg2MTUsImV4cCI6MTg2NDQ4NjYxNX0.pnpv_vpFW_Sm5y52c7nHOYOpXyDB4l5reyaSVwkRqSM",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nguoi_dung_id\": \"6\",\r\n    \"hinh_id\": \"36\",\r\n    \"noi_dung\": \"PixelArt\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/info/postCommentAndImage",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"info",
+						"postCommentAndImage"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8081/image/get-image/1/12?ImageName=Chill",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImhvYW5nbmFtQGdtYWlsLmNvbSIsInBhc3N3b3JkIjoiSG9hbmdOYW0iLCJuZ3VvaV9kdW5nX2lkIjo2LCJpYXQiOjE3MDY4NjI1NDUsImV4cCI6MTg2NDY1MDU0NX0.xsGNaJY7MMIPVIvSG9kKtZGeyzflZlGELzs8vDRzMNU",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8081/image/get-image/1/12?ImageName=Chill",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"image",
+						"get-image",
+						"1",
+						"12"
+					],
+					"query": [
+						{
+							"key": "ImageName",
+							"value": "Chill"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
